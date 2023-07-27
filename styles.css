@@ -1,138 +1,153 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    /*background-color: #227b22;  Cambia este valor para el verde inglés deseado */
-    background-color: rgba(87,88,90,255);
-    font-family: "Arial", sans-serif;
-    min-height: 100vh;
-    width: 100%;
-  }
-  
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .profile img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin-top: 100px;
-  }
-  
-  .profile-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-  }
-  
-  .title {
-    font-family: "Arial", sans-serif;
-    font-size: 24px;
-    color: #fff;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .subtitle {
-    font-family: "Arial", sans-serif;
-    font-size: 18px;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  main {
-    padding: 5px;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .button-container {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    font-size: 15px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(87, 88, 90, 255);
+  font-family: "Arial", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}
+
+.title {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main {
+  padding: 5px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+}
+
+.link-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  padding: 12px 30px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 100%; /* Cambiar a unidades relativas */
+  max-width: 680px; /* Agregar un límite máximo */
+  height: 56px;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section-title {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Agregar flex-wrap para que las imágenes se ajusten en pantallas más pequeñas */
+}
+
+.carousel img {
+  width: 100%; /* Cambiar a unidades relativas */
+  max-width: 200px; /* Agregar un límite máximo */
+  height: auto; /* Permitir que la altura se ajuste automáticamente */
+  object-fit: cover;
+  margin: 10px;
+}
+
+footer {
+  background-color: rgba(87, 88, 90, 255);
+  padding: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.footer-content a {
+  display: inline-block;
+  margin: 15px;
+}
+
+.footer-content img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Media queries para hacer el sitio responsive en diferentes tamaños de pantalla */
+
+/* Por ejemplo, para pantallas con un ancho máximo de 768px */
+@media screen and (max-width: 768px) {
   .link-button {
-    display: inline-block;
-    background-color: #fff;
-    color: #000;
-    padding: 12px 30px;
-    margin: 10px;
-    text-decoration: none;
-    border-radius: 10px;
-    width: 680px;
-    height: 56px;
+    max-width: 90%; /* Reduce el ancho máximo del botón */
   }
-  
-  .section {
-    margin-top: 40px;
-  }
-  
-  .section-title {
-    font-family: "Arial", sans-serif;
-    font-size: 24px;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .section-text {
-    color: #fff;
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  .carousel {
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-  }
-  
+
   .carousel img {
-    width: 200px;
-    height: 220px;
-    object-fit: cover;
-    margin: 10px;
+    max-width: 150px; /* Reduce el tamaño máximo de las imágenes del carrusel */
   }
-  
-  footer {
-    background-color: rgba(87,88,90,255);
-    padding: 20px;
-    text-align: center;
-    margin-top: 15px;
-  }
-  
-  .footer-content a {
-    display: inline-block;
-    margin: 15px;
-  }
-  
-  .footer-content img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-  }
+}
   
